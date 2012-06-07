@@ -1,0 +1,12 @@
+.hightlight-banner-container .wrapper {
+	overflow: hidden !important;
+	width: 980px;
+	display: block;
+	position: relative;
+}
+.hightlight-banner-container ul.thumbnail li {
+	float: right;
+}
+.hightlight-banner-container ul.thumbnail li.selected {
+	border-color: #fff;
+}

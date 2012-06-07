@@ -1,0 +1,484 @@
+﻿/* @override 
+	http://shopping.delta/css/shopping_index.css */
+
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+img {border: 0;}
+body {font-family: Tahoma; color: #555; font-size: 13px;}
+
+a {color: #004BC7; text-decoration: none;}
+a:hover {color: #007EFE;}
+
+table tr td {border: 1px solid #cfe9ff; vertical-align: middle; text-align:center; padding: 0; margin: 0;}
+
+li {list-style: none;}
+
+/*------- Shopping Header  --------*/
+
+div.headerFixWidth {width: 980px; margin: 0 auto; position: relative; z-index: 12;}
+
+div.shoppingHeader {position: relative; margin: 0 auto;}
+	div.shoppingHeader div.redTab {width: auto; height: 30px; position:relative;}
+	div.shoppingHeader div.headerWrap {width: auto; height: 70px; position: relative; z-index: 11;}
+		div.headerWrap h1 a {display: block; width: 210px; height: 40px; position: relative; top: 15px; left: 10px; background:url(http://dev.e1.s1sf.com/sp/0/di/images/icons_index.gif) no-repeat 0px 0px; text-indent:-999999px;}
+	div.association {position: absolute; display: block; height: 27px; width: 190px; bottom: 8px; right: 7px; background:url(http://dev.e1.s1sf.com/sp/0/di/images/icons_index.gif) no-repeat -70px -190px;}
+				
+#wrapperTopmenu {position: absolute; right: 0; top: 3px; background: #FFF;  z-index: 9;}
+#wrapperTopmenu ul#topmenu {height: 28px; list-style: none; float: left;}
+	#nav {height: 28px;  list-style: none; float: left;}	
+	#nav li {height: 28px; padding: 0 10px; line-height: 28px; border-left: 1px solid #ddd; border-top: 1px solid #fff; float: left; position: relative; background: #FFF;}
+	#nav li:hover { border: 1px solid #ddd; border-right: none; background: #ddd;}
+	#nav li.border{ border-right: 1px solid #fff;}
+	#nav li.border2{ border-left: 1px solid #fff;}
+	#nav li.border:hover { border: 1px solid #ddd;}
+	#nav li.border2:hover  { border: 1px solid #ddd; border-right: none;}
+	#nav li.set_border {border: none;}
+	#nav li a {font-weight: normal; font-size: 12px; color: #555; text-decoration: none;}
+	#nav li a:hover {color: #007EFE; text-decoration: underline;}
+		/*sub menu*/
+		#nav li ul {display: none; float: none; list-style: none;}
+		#nav li:hover ul, #nav li.sfhover ul {display: block; position: absolute; padding-bottom: 7px; top: 28px; border: 1px solid #ddd;padding: 5px;}
+			#nav li:hover ul.set_bg1, #nav li.sfhover ul.set_bg1 {left: -1px; width: 116px; background: #FFF;}
+			#nav li:hover ul.set_bg2, #nav li.sfhover ul.set_bg2 {left: -1px; width: 172px; background: #FFF;}
+			#nav li:hover ul.set_bg3, #nav li.sfhover ul.set_bg3 {right: -1px; width: 133px; background: #FFF;}
+		#nav li:hover ul li, #nav li.sfhover ul li {height: 22px; line-height: 22px; text-align: left; border: none; padding: 0; float: none;}
+		#nav li:hover ul li a, #nav li.sfhover ul li a {font-weight: normal; text-decoration: none; border: none; padding: 0 4px; display: block;}
+		#nav li:hover ul li a:hover, #nav li.sfhover ul li a:hover {background: #f0f0f0;  text-decoration: none;}	
+		
+div.logoAd {width: 120px; height: 45px; display: block; position: absolute; top: 13px; left: 240px;}			
+			 
+/*------- end Shopping Header  --------*/
+
+
+/*------- Shopping Footer  --------*/
+div.shoppingFooter {width: 980px; margin: 10px auto; border-top: 1px solid #ddd; padding-top: 10px; position: relative;}
+	div.siteMapFooter {position: relative; width: 780px; margin: 0 auto;}
+	div.siteMapFooter ul li {float: left; display: block; width: 99px; height: 110px; padding: 10px; border-right: 1px solid #ddd; font-size: 11px;}
+	div.siteMapFooter ul li p {line-height: 18px;}
+	div.siteMapFooter ul li p.address {line-height: 12px; margin-top: 15px;}
+	div.siteMapFooter ul li p label {float: left; width: 60px; text-align: left;}
+	div.siteMapFooter ul li p a {color: #004BC7;}
+	div.siteMapFooter ul li p a:hover {color: #007EFE;}
+	div.siteMapFooter ul li.contactLast {float: left; display: block; width: 280px; padding: 10px; border: none;}
+	div.paymentSecurity {display: block; width: 635px; height: 65px; margin: 15px auto 15px auto;}
+		div.paymentSecurity div.payment {width: 280px; height: 65px; display: block; background: url(../images/icon/icons_index.gif) no-repeat 0 -350px; float: left; position: relative;}
+		div.paymentSecurity div.security {width: 350px; height: 65px; display: block; background: url(../images/icon/icons_index.gif) no-repeat 0 -420px; float: right; position: relative;}
+	div.associationFooter {display: block; width: 280px; height: 32px; background: url(../images/icon/icons_index.gif) no-repeat 0px -220px; margin: 0 auto 5px auto;}
+	div.LegalFooter { text-align: center; margin: auto; font-size: 11px;}
+/*------- end Shopping Footer  --------*/
+
+
+/*------- Search Tab  --------*/
+div.searchWrap {height: 39px; position: relative; width: 980px; margin: 0 auto; background: #cde1f5; line-height: 39px; z-index: 10;}
+		div.showCatBtn {position: relative; width: 181px; height: 39px; float: left;}
+	 	div.searchWrap div.showCatBtn ul li.catWrap {display: block; width: 181px; height: 39px; background:url(http://dev.e1.s1sf.com/sp/0/di/images/icons_index.gif) no-repeat -220px 0px; text-indent: -999999px; float: left; position: relative; cursor: pointer;}
+		div.searchWrap div.searchBox {position: relative; float: left; display:inline; width: 615px;}
+		div.searchWrap div.searchBox ul {padding: 0; margin: 0;}
+		div.searchWrap div.searchBox p {float: left; position: relative; display: inline; margin-left: 5px; padding-top: 9px; line-height: 39px; width: auto; font-size: 12px;}
+		*:first-child+html div.searchWrap div.searchBox p.ieSevenFix {padding-top: 0px;}
+			 div.searchWrap div.searchBox p a {color: #555;}
+			 div.searchWrap div.searchBox p a:hover {color:#007EFE;}
+			 div.searchWrap div.searchBox p input.txtfield {width: 250px; height: 20px; border: 1px solid #b0b0b0;}
+			 div.searchWrap div.searchBox p select.searchFilter {width: 185px; height: 22px; border: 1px solid #b0b0b0; position: absolute;}
+			 div.searchWrap div.searchBox p input.searchBtn2 {width: 68px; height: 22px; background:url(http://dev.e1.s1sf.com/sp/0/di/images/icons_index.gif) no-repeat -220px -50px; cursor: pointer; padding: 0; border: none;}
+			 div.cartCounter {display: block; position: absolute; top: 7px; right: 10px; background:url(http://dev.e1.s1sf.com/sp/0/di/images/icons_index.gif) no-repeat -120px -100px; width: 152px; height: 25px; line-height: 25px; text-align: center; font-size: 12px;}
+				div.cartCounter a {color:#007EFE; font-weight: bold;}
+				div.cartCounter a:hover {color:#004BC7;}
+				div.cartCounter span {padding: 2px 8px; background:url(http://dev.e1.s1sf.com/sp/0/di/images/icons_index.gif) no-repeat -280px -130px;}
+				
+div#catPopup {position: absolute; top: 36px; left: 0; padding: 0 10px 0 10px; background: #FFF; border: 1px solid #0863b5; z-index: 7; display: none; width: 460px; height: 250px;}
+	div#catPopup p {color:#FF4E00; font-size: 14px; font-weight: bold; line-height: 15px; margin-top: 10px;}
+	div#catPopup div.hotCats {margin: 0; position: relative; padding:10px 0 0 10px;}
+		div.hotCats ul {margin: 0; padding: 0;}
+		div.hotCats ul li {float: left; display: inline; position: relative; width: 150px; font-size: 11px; line-height: 15px;}
+		div.hotCats ul li p {line-height: 18px!important; font-size: 11px!important; font-weight: normal!important; margin-top: 0!important;}
+		div.hotCats ul li p a {color: #555;}
+		div.hotCats ul li p a:hover {color: #007EFE;}
+	div#catPopup div.allCats {margin: 0; position: relative; padding: 0 0 10px 10px; border-top: 1px dashed #ccc; margin-top: 10px;}
+		div.allCats ul {margin: 0; padding: 10px 0 0 0;}
+		div.allCats ul li {float: left; display: inline; position: relative; width: 150px; font-size: 11px; line-height: 15px;}
+		div.allCats ul li p {line-height: 18px!important; font-size: 11px!important; font-weight: normal!important; margin-top: 0!important;}
+		div.allCats ul li p a {color: #555;}
+		div.allCats ul li p a:hover {color: #007EFE;}
+
+
+/*------- end of Search Tab  --------*/
+
+div.wrapRow {width: 980px; margin: 12px auto 0 auto; z-index: 8; position: relative;}
+	div.wrapRow div.leftColumnWrapper {width: 180px; float: left; position: relative; z-index: 7;}
+	div.wrapRow div.rightColumnWrapper {width: 795px; float: right; position: relative; z-index: 6;}
+div.wrapRow2 {width: 980px; margin: 12px auto 0 auto; border-top: 1px solid #ddd;}
+	div.wrapRow2 div.leftColumnWrapper {width: 180px; float: left; position: relative;}
+	div.wrapRow2 div.rightColumnWrapper {width: 795px; float: right; position: relative;}
+		div.jumboAd {width: 510px; height: 280px; float: left; position: relative;}
+		div.specialDeals {width: 280px; height: 280px; float: right; position: relative; background: #f0f0f0;}
+			div.specialDeals div.sdHeader {width: 160px; height: 40px; background:url(../images/icon/icons_index.gif) no-repeat -50px -50px; margin: 10px;}
+			div.specialDeals div.sdProducts {margin: 10px 5px 0 5px; position: relative;}
+			div.specialDeals div.sdProducts ul {margin: 0; padding: 0;}
+			div.specialDeals div.sdProducts ul li {float: left; display: inline;}
+			div.specialDeals div.sdProducts ul li.sdarrowleft {width: 10px; height: 210px; background:url(../images/icon/icons_index.gif) no-repeat -410px -45px;
+																position: relative; cursor: pointer; margin: 0 2px;}
+			div.specialDeals div.sdProducts ul li.sdarrowright {width: 10px; height: 210px; background:url(../images/icon/icons_index.gif) no-repeat -420px -45px;
+																position: relative; cursor: pointer; margin-left: 7px;}													
+			div.specialDeals div.sdProducts ul li.sdProductList {width: 112px; height: 210px; margin: 0 0 0 5px; position: relative;}
+			li.sdProductList span.saleFilter {display: block; position: absolute; top: 0; left: 0; background:url(../images/icon/icons_index.gif) no-repeat -350px -350px;
+												width:50px; height: 27px; color: #FFF; font-size: 12px; text-align: center; font-weight: bold; padding-top: 23px;
+												font-family:"tahoma";}		
+			p.sdTitle {text-align: center; margin: 10px 0; height: 60px;}
+			p.sdTitle a {color: #555;}
+			p.sdTitle a:hover {color: #007EFE;}
+			p.sdPrice {color: #dd0000; text-align: center; font-weight: bold;}
+		div.newStripAd {width: 795px; height: 50px; float: left; margin-top: 7px;}
+		
+/* Left Categories Menu */	
+
+#catMenu {position: absolute; left: 0; top: 0; background: #FFF; width: 180px;}
+	#leftnav {list-style: none; float: left; border-left: 1px solid #82A4D2; border-top: 1px solid #82A4D2;}	
+	#leftnav li {height: 27px; padding: 0 10px; width: 159px; line-height: 27px; border-bottom: 1px solid #82A4D2; border-right: 1px solid #82A4D2; float: left; position: relative; background: #E1F1FF; cursor: pointer; position: relative;}
+	#leftnav li span {position:absolute; right: 0; top: 0; font-size: 11px; font-weight: bold; font-family: MS Sans Serif; margin-right: 5px;}
+	#leftnav li:hover {background: #FFF; color: #007EFE;}
+	#leftnav li a {font-weight: bold; font-size: 12px; color: #555; text-decoration: none;}
+	#leftnav li a:hover {color: #007EFE; text-decoration: none;}
+		/*sub menu*/
+		#leftnav li ul {display: none; float: none; list-style: none;}
+		#leftnav li:hover ul, #leftnav li.sfhover ul {display: block; position: absolute; top: 28px; border: 1px solid #82A4D2; padding: 5px;}
+			#leftnav li:hover ul.set_bg1, #leftnav li.sfhover ul.set_bg1 {left: 179px; top: -1px; background: #FFF;}
+		#leftnav li:hover ul li, #leftnav li.sfhover ul li {height: 22px; line-height: 22px; text-align: left; border: none; padding: 0; float: none;}
+		#leftnav li:hover ul li a, #leftnav li.sfhover ul li a {font-weight: normal; text-decoration: none; border: none; padding: 0 5px; display: block; background: #FFF;}
+		#leftnav li:hover ul li a:hover, #leftnav li.sfhover ul li a:hover {background: #E1F1FF;  text-decoration: none;}	
+		
+
+/* end of Left Categories Menu */				
+			
+		div.recommend {width: 178px; height: 171px; border: 1px solid #ddd;}
+			div.tabHeader {width: 173px; height: 30px; background:url(../images/icon/icons_index.gif) repeat-x -0px -260px; line-height: 30px; font-size: 14px;
+							font-weight: bold; color: #004bc7; padding-left: 5px; position: relative;}
+			div.tabHeader2 {width: 273px; height: 30px; background:url(../images/icon/icons_index.gif) repeat-x -0px -260px; line-height: 30px; font-size: 14px;
+							font-weight: bold; color: #ff5000; padding-left: 5px; position: relative;}
+			div.tabHeader3 {width: 173px; height: 30px; background:url(../images/icon/icons_index.gif) repeat-x -0px -260px; line-height: 30px; font-size: 14px;
+							font-weight: bold; color: #ff5000; padding-left: 5px; position: relative;}
+			div.tabHeader4 {width: 503px; height: 30px; background:url(../images/icon/icons_index.gif) repeat-x -0px -260px; line-height: 30px; font-size: 14px;
+							font-weight: bold; color: #ff5000; padding-left: 5px; position: relative;}
+			div.tabHeader5 {width: 173px; height: 30px; background:url(../images/icon/icons_index.gif) repeat-x -0px -260px; line-height: 30px; font-size: 14px;
+							font-weight: bold; color: #000; padding-left: 5px; position: relative;}
+			div.recommend div.rcList ul {margin: 0; padding: 0; margin-top: 7px;}
+			div.recommend div.rcList ul li {height: 18px; line-height: 18px; padding-left: 5px; width: 173px;}
+			div.recommend div.rcList ul li a {font-size: 11px; font-weight: bold; color: #555;}
+			div.recommend div.rcList ul li a:hover {color: #007EFE;}
+		div.contactShopping {width: 178px; height: 150px;  border: 1px solid #ddd; margin-top: 4px;}
+			div.contactShopping div.contactChoice ul {margin: 0; padding: 0; margin-top: 5px;}
+			div.contactShopping div.contactChoice ul li {height: 20px; line-height: 20px; width: 168px; background: #f6f6f6; margin: 2px 5px 0 5px; color: #555;}
+			div.contactShopping div.contactChoice ul li a {font-size: 12px; color: #004bc7;}
+			div.contactShopping div.contactChoice ul li a:hover {color: #007EFE;}
+			div.contactShopping div.contactChoice ul li span.QQ {padding: 10px 10px; background:url(../images/icon/icons_index.gif) no-repeat -5px -94px; margin-right:10px; }
+			div.contactShopping div.contactChoice ul li span.board {padding: 10px 10px; background:url(../images/icon/icons_index.gif) no-repeat -29px -94px; margin-right:10px; }
+			div.contactShopping div.contactChoice ul li span.email {padding: 10px 10px; background:url(../images/icon/icons_index.gif) no-repeat -53px -94px; margin-right:10px; }
+			div.contactShopping div.contactChoice ul li span.tel {padding: 10px 10px 9px 10px; background:url(../images/icon/icons_index.gif) no-repeat -77px -94px; margin-right:10px; }
+			div.contactShopping div.contactChoice ul li.contactDetail {text-align: center; background: none; padding: 3px 0 0 0; margin: 0; width: 178px;}
+		div.bestSeller {float: left; width: 510px; height: 329px;}
+			div.bestSeller div.bestSellerTab {width: 510px; height: 30px;}
+			div.bestSeller div.bestSellerTab ul {padding: 0; margin: 0; position: relative; border-bottom: 1px solid #5aa7e2; height: 29px;}
+			div.bestSeller div.bestSellerTab ul li {float: left; display: inline; background: #eff8ff;}
+			div.bestSeller div.bestSellerTab ul li.bsHeader {width: 84px; height: 30px; background:url(../images/icon/icons_index.gif) no-repeat -150px -130px;}
+			div.bestSeller div.bestSellerTab ul li.catTab {float: left; width: 105.5px; _width: 105px; height: 28px; line-height: 28px; border-top: 1px solid #cfe9ff; 
+															border-right: 1px solid #cfe9ff; text-align: center; cursor: pointer;}
+			div.bestSeller div.bestSellerTab ul li.catTab:hover {background: #bee3ff;}
+			div.bestSeller div.bestSellerTab ul li.catTab a {color: #555;}	
+			div.bestSeller div.bestSellerTab ul li.catTab a:hover {color: #007EFE;}		
+			div.bestSeller div.bestSellerTab ul li.catTabSelected {background: #FFF; width: 104.5px; height: 29px; line-height: 29px; text-align:center; border-top: 1px solid #5aa7e2;
+																	border-left: 1px solid #5aa7e2; border-right: 1px solid #5aa7e2; color: #004bc7; font-weight: bold; cursor: pointer;}
+		div.bsProduct {position: relative; width: 502px; height: 288px; _height: 287px; border-bottom: 1px solid #5aa7e2; border-left: 1px solid #5aa7e2; 
+					   border-right: 1px solid #5aa7e2; color: #004bc7; padding: 5px 5px 5px 1px;}	
+		div.bsProduct div.bsRow {width: 498px; height: 140px; margin-top: 5px;}
+		div.bsProduct div.bsRow2 {width: 498px; height: 140px; margin-top: 5px;}
+			ul.bsRow {width: 498px; margin: 0; padding: 0;}
+			ul.bsRow li {float: left; width: 120px; _width: 119px; height: 140px; margin-left: 4px;}
+			ul.bsRow li div {display:block; width: 82px; height: 82px; margin: 0 auto;}
+			ul.bsRow li p {text-align: center; font-size: 11px;}
+			ul.bsRow li p.bsTitle {margin: 5px 0; height: 28px;}
+			ul.bsRow li p.bsTitle a {color: #555;}
+			ul.bsRow li p.bsTitle a:hover {color: #007EFE;}
+			ul.bsRow li p.bsPrice {font-weight: bold; color: #dd0000;}
+		div.prPromotion {width: 278px; height: 327px; border: 1px solid #ddd; float: right;}
+			div.prPromotion div.prList ul {margin:0; padding:0;}
+			div.prPromotion div.prList ul li {height: 60px; margin: 11px 10px 0 10px;}
+			div.prPromotion div.prList ul li label {float: left; width: 60px; margin-right: 15px;}
+			div.prPromotion div.prList ul li label img {border: 1px solid #cfe9ff;}
+			div.prPromotion div.prList ul li a span {color: #004bc7; position: relative;}
+			div.prPromotion div.prList ul li a {color: #555;}
+			div.prPromotion div.prList ul li a:hover {color: #007EFE;}
+		div.recentView {width: 178px; height: 240px; border: 1px solid #ddd; position: relative;}
+			div.rvScroll {display: block; position: absolute; top: 7px; right: 5px; width: 36px; _width: 40px; height: 14px;}
+			div.rvScroll a {float: left; display: inline; margin-left: 3px}
+			div.rvScroll a.rvScrollLeft {width: 15px; height: 14px; display: block; text-decoration: none; background:url(../images/icon/icons_index.gif) no-repeat 0px -170px;}
+			div.rvScroll a.rvScrollRight {width: 15px; height: 14px; display: block; text-decoration: none; background:url(../images/icon/icons_index.gif) no-repeat -15px -170px;}
+			div.recentView div.rvProduct {padding: 0 10px; position: relative;}
+			div.recentView div.rvProduct div {display:block; width: 80px; height: 80px; margin: 8px auto 0 auto;}
+			div.recentView div.rvProduct p.rvTitle {text-align: center; margin: 10px 0 5px 0;}
+			div.recentView div.rvProduct p.rvTitle a {color: #555;}
+			div.recentView div.rvProduct p.rvTitle a:hover {color: #007EFE;}
+			div.recentView div.rvProduct p.rvPriceBid {color: #dd0000; font-weight: bold; text-align: left; line-height: 20px;}
+			div.recentView div.rvProduct p.rvPriceBid label {float: left; text-align:left; width: 55px; font-weight: normal; color:#555;}
+			div.recentView div.rvProduct p.rvPriceBuy {color: #555; font-weight: normal; text-align: left; line-height: 20px;}
+			div.recentView div.rvProduct p.rvPriceBuy label {float: left; text-align:left; width: 55px; font-weight: normal; color:#555;}
+			div.recentView div.viewall {position: absolute; bottom: 0px; padding: 5px; background: #f6f6f6; width: 168px; text-align: right;}
+		div.hotProduct {width: 508px; height: 240px; position: relative; float: left; border: 1px solid #ddd;}
+			div.hpList {padding: 5px 5px 5px 0px; width: 503px; float: left; position: relative; display:inline;}
+			div.hpList ul {margin: 0; padding: 0;}
+			div.hpList ul li {float: left; display: inline;}
+			div.hpList ul li.hparrowleft {width: 10px; height: 195px; background:url(../images/icon/icons_index.gif) no-repeat -410px -40px;
+										  position: relative; cursor: pointer; margin: 0 2px 0 6px;}
+			div.hpList ul li.hparrowright {width: 10px; height: 195px; background:url(../images/icon/icons_index.gif) no-repeat -420px -40px;
+										   position: relative; cursor: pointer; margin-left: 11px;}	
+			div.hpList ul li.hpProductList {width: 143px; height: 195px; margin: 0 0 0 11px; position: relative;}
+			div.hpList ul li.hpProductList div {display:block; width: 112px; height: 112px; margin: 3px auto 0 auto;}
+			p.hpTitle {text-align: center; margin: 6px 0; height: 50px;}
+			p.hpTitle a {color: #555;}
+			p.hpTitle a:hover {color: #007EFE;}
+			p.hpPrice {color: #dd0000; text-align: center; font-weight: bold;}
+		div.newProduct {width: 280px; height: 240px; float: right; position: relative;}
+			div.newProduct div.npTab {width: 280px; height: 30px;}
+			div.newProduct div.npTab ul {padding: 0; margin: 0; position: relative; border-bottom: 1px solid #5aa7e2; height: 29px;}
+			div.newProduct div.npTab li.npHeader {float: left; width: 84px; height: 30px; background:url(../images/icon/icons_index.gif) no-repeat -60px -130px;}
+			div.newProduct div.npTab li.npTabChoose {float: left; width: 64.3px; height: 28px; line-height: 28px; background: #eff8ff; text-align:center;
+													 border-top: 1px solid #cfe9ff; border-right: 1px solid #cfe9ff; cursor: pointer;}
+			div.newProduct div.npTab li.npTabChoose a {color: #555;}
+			div.newProduct div.npTab li.npTabChoose a:hover {color: #007EFE;}
+			div.newProduct div.npTab li.npTabChoose:hover {background: #bee3ff;}
+			div.newProduct div.npTab li.npTabChooseSelected { float: left; background: #FFF; width: 63.3px; height: 29px; line-height: 29px; text-align:center; border-top: 1px solid #5aa7e2;
+															 border-left: 1px solid #5aa7e2; border-right: 1px solid #5aa7e2; color: #004bc7; font-weight: bold; cursor: pointer;}
+			div.newProduct div.npList {width: 278px; height: 211px; border: 1px solid #5aa7e2; border-top: none;}
+			div.newProduct div.npList div.npListRow {padding: 12px 0 0 4px; _padding: 10px 0 0 4px;}
+			div.newProduct div.npList div.npListRow ul {width: 263px; height: 54px;}
+			div.newProduct div.npList div.npListRow ul li {position: relative; float: left; display:inline; width: 52px; height: 52px; margin-left: 11px; border: 1px solid #cfe9ff; text-align:center;}
+			div.newProduct div.npList div.npListRow ul li a:hover {width: 68px; height: 68px; border: 3px solid #0b65b7; position: absolute; top: -11px; left: -11px; background: #fff; text-align:center;}
+
+		
+		div#hbBanner {width: 510px; height: 230px; margin-top: 4px; float: left; position: relative; background: url(../images/sample_ad_pd/510x230-1.jpg) no-repeat;}
+			div#hbBanner a {display: block; position: absolute;}
+		div#hbBanner2 {width: 510px; height: 230px; margin-top: 4px; float: left; position: relative; background: url(../images/sample_ad_pd/510x230-2.jpg) no-repeat;}
+			div#hbBanner2 a {display: block; position: absolute;}
+		div.hbRightCat {width: 280px; height: 234px; float: right; position: relative;}
+			div.hbRightCat div.hbRightRow {width: 270px; height: 107px; padding: 5px 5px 5px 0;}
+			div.hbRightCat div.hbRightRow ul {padding: 0; margin: 0; position: relative; height: 107px;}
+			div.hbRightCat div.hbRightRow ul li {float: left; width: 85px; margin-left: 5px; display: inline; height: 107px;}
+			div.hbRightCat div.hbRightRow ul li div {display: block; width: 50px; height: 50px; margin: 0 auto; position: relative;}
+			p.hbTitle {text-align: center; font-size: 11px; padding-top: 10px; position: relative;}
+			p.hbTitle a {color: #555;}
+			p.hbTitle a:hover {color: #007EFE;}
+		div.halfBanner {width: 178px; height: 233px; position: relative; border: 1px solid #ddd; border-top: none;}
+		
+		/*------- Half Banner -------*/	
+				/*------- Pink -------*/
+				div.halfBanner div.hbPink {width: 178px; height: 230px; border-top: 3px solid #ef6f75; position: relative;}
+				div.halfBanner div.hbPink ul {margin: 0; padding: 0; position: relative;}
+				div.halfBanner div.hbPink ul li {width: 178px; position: relative; _margin-bottom: -3px;}
+				*:first-child+html div.halfBanner div.hbPink ul li {margin-bottom: -3px;}
+				div.halfBanner div.hbPink ul li a {height: 39px; line-height: 39px; width: 173px;  background: #FFF;  float: left; color: #555;
+													padding-left: 5px; border-top:  1px solid #ddd; font-size: 12px; position: relative; cursor: pointer;}
+				div.halfBanner div.hbPink ul li a:hover  {height: 39px; line-height: 39px; width: 173px; float: left; background: #ef6f75; color: #FFF;
+															padding-left: 5px; border-top:  1px solid #ddd; font-size: 12px;}
+				div.halfBanner div.hbPink ul li a span {height: 25px; width: 10px; background: url(../images/icon/icons_index.gif) no-repeat -40px -162px;
+														position: absolute; top: 5px; right: 5px;}
+				div.halfBanner div.hbPink ul li a:hover span {height: 25px; width: 10px; background: url(../images/icon/icons_index.gif) no-repeat -50px -162px;
+																position: absolute; top: 5px; right: 5px;}
+				div.halfBanner div.hbPink ul li a.catSelected {height: 39px; line-height: 39px; width: 173px; float: left; background: #ef6f75; color: #FFF;
+																padding-left: 5px; border-top:  1px solid #ddd; font-size: 12px;}
+				div.halfBanner div.hbPink ul li a.catSelected span {height: 25px; width: 10px; background: url(../images/icon/icons_index.gif) no-repeat -50px -162px;
+																	position: absolute; top: 5px; right: 5px;}	
+																
+				/*------- Blue -------*/
+				div.halfBanner div.hbBlue {width: 178px; height: 230px; border-top: 3px solid #6097b6; position: relative;}
+				div.halfBanner div.hbBlue ul {margin: 0; padding: 0; position: relative;}
+				div.halfBanner div.hbBlue ul li {width: 178px; position: relative; _margin-bottom: -3px;}
+				*:first-child+html div.halfBanner div.hbBlue ul li {margin-bottom: -3px;}
+				div.halfBanner div.hbBlue ul li a {height: 39px; line-height: 39px; width: 173px;  background: #FFF;  float: left; color: #555;
+													padding-left: 5px; border-top:  1px solid #ddd; font-size: 12px; position: relative; cursor: pointer;}
+				div.halfBanner div.hbBlue ul li a:hover  {height: 39px; line-height: 39px; width: 173px; float: left; background: #6097b6; color: #FFF;
+															padding-left: 5px; border-top:  1px solid #ddd; font-size: 12px;}
+				div.halfBanner div.hbBlue ul li a span {height: 25px; width: 10px; background: url(../images/icon/icons_index.gif) no-repeat -40px -162px;
+														position: absolute; top: 5px; right: 5px;}
+				div.halfBanner div.hbBlue ul li a:hover span {height: 25px; width: 10px; background: url(../images/icon/icons_index.gif) no-repeat -50px -162px;
+																position: absolute; top: 5px; right: 5px;}
+				div.halfBanner div.hbBlue ul li a.catSelected {height: 39px; line-height: 39px; width: 173px; float: left; background: #6097b6; color: #FFF;
+																padding-left: 5px; border-top:  1px solid #ddd; font-size: 12px;}
+				div.halfBanner div.hbBlue ul li a.catSelected span {height: 25px; width: 10px; background: url(../images/icon/icons_index.gif) no-repeat -50px -162px;
+																	position: absolute; top: 5px; right: 5px;}	
+																	
+				/*------- Ebay -------*/
+				div.eBayBanner {width: 178px; height: 211px; position: relative; border-bottom: 1px solid #ddd;}
+				div.eBayBanner div.hbEbay {width: 178px; height: 211px; position: relative;}
+				div.eBayBanner div.hbEbay ul {margin: 0; padding: 0; position: relative;}
+				div.eBayBanner div.hbEbay ul li {width: 178px; position: relative; _margin-bottom: -3px;}
+				*:first-child+html div.eBayBanner div.hbEbay ul li {margin-bottom: -3px;}
+				div.eBayBanner div.hbEbay ul li a {height: 41px; line-height: 41px; width: 173px;  background: #FFF;  float: left; color: #555;
+													padding-left: 5px; border-top:  1px solid #ddd; font-size: 12px; position: relative; cursor: pointer;}
+				div.eBayBanner div.hbEbay ul li a:hover  {height: 41px; line-height: 41px; width: 173px; float: left; background: #ffeda3; color: #bd6600;
+															padding-left: 5px; border-top:  1px solid #ddd; font-size: 12px;}
+				div.eBayBanner div.hbEbay ul li a span {height: 25px; width: 10px; background: url(../images/icon/icons_index.gif) no-repeat -40px -162px;
+														position: absolute; top: 5px; right: 5px;}
+				div.eBayBanner div.hbEbay ul li a:hover span {height: 25px; width: 10px; background: url(../images/icon/icons_index.gif) no-repeat -50px -162px;
+																position: absolute; top: 5px; right: 5px;}
+				div.eBayBanner div.hbEbay ul li a.catSelected {height: 41px; line-height: 41px; width: 173px; float: left; background: #ffeda3; color: #bd6600;
+																padding-left: 5px; border-top:  1px solid #ddd; font-size: 12px;}
+				div.eBayBanner div.hbEbay ul li a.catSelected span {height: 25px; width: 10px; background: url(../images/icon/icons_index.gif) no-repeat -50px -162px;
+																	position: absolute; top: 5px; right: 5px;}	
+		
+		div#fbBanner {width: 795px; height: 230px; margin-top: 4px; float: left; position: relative; background:url(../images/sample_ad_pd/790x230.jpg) no-repeat;}	
+
+		/*------- Grey -------*/
+				div.halfBanner div.hbGrey {width: 178px; height: 230px; border-top: 3px solid #8f8f8f; position: relative;}
+				div.halfBanner div.hbGrey ul {margin: 0; padding: 0; position: relative;}
+				div.halfBanner div.hbGrey ul li {width: 178px; position: relative; _margin-bottom: -3px;}
+				*:first-child+html div.halfBanner div.hbGrey ul li {margin-bottom: -3px;}
+				div.halfBanner div.hbGrey ul li a {height: 39px; line-height: 39px; width: 173px;  background: #FFF;  float: left; color: #555;
+													padding-left: 5px; border-top:  1px solid #ddd; font-size: 12px; position: relative; cursor: pointer;}
+				div.halfBanner div.hbGrey ul li a:hover  {height: 39px; line-height: 39px; width: 173px; float: left; background: #8f8f8f; color: #FFF;
+															padding-left: 5px; border-top:  1px solid #ddd; font-size: 12px;}
+				div.halfBanner div.hbGrey ul li a span {height: 25px; width: 10px; background: url(../images/icon/icons_index.gif) no-repeat -40px -162px;
+														position: absolute; top: 5px; right: 5px;}
+				div.halfBanner div.hbGrey ul li a:hover span {height: 25px; width: 10px; background: url(../images/icon/icons_index.gif) no-repeat -50px -162px;
+																position: absolute; top: 5px; right: 5px;}
+				div.halfBanner div.hbGrey ul li a.catSelected {height: 39px; line-height: 39px; width: 173px; float: left; background: #8f8f8f; color: #FFF;
+																padding-left: 5px; border-top:  1px solid #ddd; font-size: 12px;}
+				div.halfBanner div.hbGrey ul li a.catSelected span {height: 25px; width: 10px; background: url(../images/icon/icons_index.gif) no-repeat -50px -162px;
+																	position: absolute; top: 5px; right: 5px;}	
+																	
+		/*------- Gold -------*/
+				div.halfBanner div.hbGold {width: 178px; height: 230px; border-top: 3px solid #a18b57; position: relative;}
+				div.halfBanner div.hbGold ul {margin: 0; padding: 0; position: relative;}
+				div.halfBanner div.hbGold ul li {width: 178px; position: relative; _margin-bottom: -3px;}
+				*:first-child+html div.halfBanner div.hbGold ul li {margin-bottom: -3px;}
+				div.halfBanner div.hbGold ul li a {height: 39px; line-height: 39px; width: 173px;  background: #FFF;  float: left; color: #555;
+													padding-left: 5px; border-top:  1px solid #ddd; font-size: 12px; position: relative; cursor: pointer;}
+				div.halfBanner div.hbGold ul li a:hover  {height: 39px; line-height: 39px; width: 173px; float: left; background: #a18b57; color: #FFF;
+															padding-left: 5px; border-top:  1px solid #ddd; font-size: 12px;}
+				div.halfBanner div.hbGold ul li a span {height: 25px; width: 10px; background: url(../images/icon/icons_index.gif) no-repeat -40px -162px;
+														position: absolute; top: 5px; right: 5px;}
+				div.halfBanner div.hbGold ul li a:hover span {height: 25px; width: 10px; background: url(../images/icon/icons_index.gif) no-repeat -50px -162px;
+																position: absolute; top: 5px; right: 5px;}
+				div.halfBanner div.hbGold ul li a.catSelected {height: 39px; line-height: 39px; width: 173px; float: left; background: #a18b57; color: #FFF;
+																padding-left: 5px; border-top:  1px solid #ddd; font-size: 12px;}
+				div.halfBanner div.hbGold ul li a.catSelected span {height: 25px; width: 10px; background: url(../images/icon/icons_index.gif) no-repeat -50px -162px;
+																	position: absolute; top: 5px; right: 5px;}		
+																	
+/*----- Theme H3 -----------*/
+div.halfBanner div.hbPink ul li h3 a {font-size: 12px; font-weight: normal;}
+div.halfBanner div.hbBlue ul li h3 a {font-size: 12px; font-weight: normal;}
+div.eBayBanner div.hbEbay ul li h3 a {font-size: 12px; font-weight: normal;}
+div.halfBanner div.hbGrey ul li h3 a {font-size: 12px; font-weight: normal;}
+div.halfBanner div.hbGold ul li h3 a {font-size: 12px; font-weight: normal;}
+div.halfBanner div.hbPink ul li a {cursor: pointer;}
+div.halfBanner div.hbBlue ul li a {cursor: pointer;}
+div.eBayBanner div.hbEbay ul li a {cursor: pointer;}
+div.halfBanner div.hbGrey ul li a {cursor: pointer;}
+div.halfBanner div.hbGold ul li a {cursor: pointer;}
+																	
+																	
+		div.fullRight {width: 795px; height: 234px; float: left; position: relative;}	
+			div.fullRightList {padding: 20px 5px 5px 0px; width: 790px; height: 209px;}
+			div.fullRightList ul {margin: 0; padding: 0;}
+			div.fullRightList ul li {float: left; display: inline;}
+			div.fullRightList ul li.frarrowleft {width: 10px; height: 195px; background:url(../images/icon/icons_index.gif) no-repeat -410px -40px;
+										  			position: relative; cursor: pointer; margin: 0 2px 0 6px;}
+			div.fullRightList ul li.frarrowright {width: 10px; height: 195px; background:url(../images/icon/icons_index.gif) no-repeat -420px -40px;
+										   			position: relative; cursor: pointer; margin-left: 11px;}	
+			div.fullRightList ul li.frProductList {width: 137px; height: 195px; margin: 0 0 0 11px; position: relative;}
+			div.fullRightList ul li.frProductList div {display:block; width: 112px; height: 112px; margin: 3px auto 0 auto;}
+			p.frTitle {text-align: center; margin: 6px 0; height: 50px;}
+			p.frTitle a {color: #555;}
+			p.frTitle a:hover {color: #007EFE;}
+			p.frPrice {color: #dd0000; text-align: center; font-weight: bold;}	
+			
+		div.smallAds {width: 180px; height: 256px; position: relaive;}	
+			div.smallAds div.smAdTop {width: 160px; height: 120px; padding: 4px 10px; display: block; position: relative;}
+			div.smallAds div.smAdBottom {width: 160px; height: 120px; padding: 4px 10px; display: block; position: relative;}
+			
+		div.shopSection {width: 790px; height: 256px; float: left; position: relative; display: block;}
+			div.shopSection div.ssTab {width: 790px; height: 30px; position: relative;}
+			div.shopSection div.ssTab ul {margin: 0; padding: 0; width: 795px; height: 29px; border-bottom: 1px solid #5aa7e2; background: #f4f4f4;}
+			div.shopSection div.ssTab ul li.ssHeader {float: left; display: inline; width: 60px; height: 30px; background:url(../images/icon/icons_index.gif) no-repeat 0px -130px;}
+			div.shopSection div.ssTab ul li.ssChoose {float: left; display: inline height: 28px; padding: 0 15px; line-height: 28px; border-top: 1px solid #cfe9ff;
+													   border-right: 1px solid #cfe9ff; background: #eff8ff; cursor: pointer;}
+			div.shopSection div.ssTab ul li.ssChoose:hover {background: #bee3ff;}
+			div.shopSection div.ssTab ul li.ssChoose a {color: #555;}
+			div.shopSection div.ssTab ul li.ssChoose a:hover {color: #007EFE;}		
+			div.shopSection div.ssTab ul li.ssSelected {background: #FFF;  height: 29px; padding: 0 15px; float: left; line-height: 29px; text-align:center; border-top: 1px solid #5aa7e2;
+														border-left: 1px solid #5aa7e2; border-right: 1px solid #5aa7e2; color: #004bc7; font-weight: bold; cursor: pointer; display: inline;}
+			div.shopSection div.ssShopHolder {width: 793px; height: 225px; border: 1px solid #5aa7e2; border-top: none; position: relative;}
+			div.shopSection div.ssShopHolder div.ssShopList {float: left; position: relative; width: 510px; height: 217px; margin-top: 10px;}			
+				div.ssShopList div.ssShopName {width: 139px; height: 195px; padding: 3px; float: left; display: inline; position: relative; border-right: 1px solid #ddd;}
+				div.ssShopList div.ssShopName p a {color: #555; text-align: left; display: block; padding: 2px; background:#FFFFFF; position: relative;}
+				div.ssShopList div.ssShopName p a:hover {color: #007EFE; background:#e4f3ff;}
+				div.ssShopList div.ssShopName p a.hover {color: #007EFE; background:#e4f3ff;}
+				div.ssShopList div.ssShopName p a:hover span {color: #007EFE;}	
+				div.ssShopList div.ssShopName p a span {position: absolute; right: 0; top: 0; color: #fff; font-family: MS Sans Serif; font-size: 9px; font-weight: bold; padding: 4px;}
+				div.ssShopList div.ssShopName p a.hover span {position: absolute; right: 0; top: 0; color: #007EFE;}
+				div.ssShopList div.ssShopPreview {float: right; position: relative; display: inline; height: 205px; width: 338px; border: 1px solid #cfe9ff; background: #e7edf3;}
+				div.ssShopList div.ssShopPreview div.shopLogo {position: relative; width: 192px; padding: 15px 73px;}	
+				div.ssShopList div.ssShopPreview div.shopLogo img {border: 1px solid #ccc;}		
+				div.ssShopList div.ssShopPreview div.shopDetail {widh: 308px; height: 85px; padding: 5px 15px;}
+				div.ssShopList div.ssShopPreview div.shopDetail a {color: #555;}
+				div.ssShopList div.ssShopPreview div.shopDetail a:hover {color: #007EFE;}
+			div.ssRightCat {width: 270px; height: 229px; margin-top: 5px; float: right; position: relative;}
+			div.ssRightCat div.ssRightRow {width: 269px; height: 95px; padding: 5px 0 0 0;}
+			div.ssRightCat div.ssRightRow ul {padding: 0; margin: 0; position: relative; height: 107px;}
+			div.ssRightCat div.ssRightRow ul li {float: left; width: 75px; margin-left: 10px; display: inline; height: 107px;}
+			div.ssRightCat div.ssRightRow ul li div {display: block; width: 50px; height: 50px; margin: 0 auto; position: relative;}
+			p.ssTitle {text-align: center; font-size: 11px; padding-top: 7px; position: relative;}
+			p.ssTitle a {color: #555;}
+			p.ssTitle a:hover {color: #007EFE;}
+			
+			div.ebayWrapper {width: 695px; float: left; display:inline;}
+				div.ebayWrapper div.ebaySection {width: 693px; height: 252px; border: 1px solid #f0c100;}
+				 	div.ebaySection div.ebayLeft {width: 178px; height: 252px; float: left; position: relative; border-right: 1px solid #f0c100;}
+					div.ebaySection div.ebayLeft div.ebayHeader {width: 178px; height: 40px; background:url(../images/icon/icons_index.gif) no-repeat 0px -300px; text-indent: -999999px;}
+			div.facebookWrapper {width: 278px; position:  absolute; top:  0; right: 0;}	
+			
+/*---- Ad Left, Right ----*/	
+div.adHolder {height: 100%; width: 100%; position: absolute; top: 0; left: 0; z-index: 0; overflow: hidden;}		
+	div.adHolder div.adLeftRightInner {width: 980px; height: 600px; display: block; margin: 0 auto; position: relative;}								
+	div.adHolder div.adLeftRightInner div.adLeft {width: 160px; height: 600px; display: block; position: absolute; top: 0px; left: -165px;}	
+	div.adHolder div.adLeftRightInner div.adRight {width: 160px; height: 600px; display: block; position: absolute; top: 0; right: -165px;}				
+/*---- end Ad Left, Right ----*/	
+
+
+
+/*---- 11/5/2011 ----*/
+div.specialDeals div.sdProducts ul li.sdHidearrowleft {width: 10px; height: 210px; background:url(../images/icon/icons_index.gif) no-repeat -430px -45px;
+																position: relative; cursor: default; margin: 0 2px;}
+div.specialDeals div.sdProducts ul li.sdHidearrowright {width: 10px; height: 210px; background:url(../images/icon/icons_index.gif) no-repeat -430px -45px;
+																position: relative; cursor: default; margin-left: 7px;}	
+div.hpList ul li.hpHidearrowleft {width: 10px; height: 195px; background:url(../images/icon/icons_index.gif) no-repeat -430px -65px;
+							  position: relative; cursor: default; margin: 0 2px 0 6px;}
+div.hpList ul li.hpHidearrowright {width: 10px; height: 195px; background:url(../images/icon/icons_index.gif) no-repeat -430px -65px;
+							   position: relative; cursor: default; margin-left: 11px;}		
+div.hpListNR ul li.hpHidearrowleft {width: 10px; height: 195px; background:url(../images/icon/icons_index.gif) no-repeat -430px -65px;
+										  position: relative; cursor: default; margin: 0 2px 0 6px;}
+div.hpListNR ul li.hpHidearrowright {width: 10px; height: 195px; background:url(../images/icon/icons_index.gif) no-repeat -430px -65px;
+										   position: relative; cursor: default; margin-left: 11px;}		
+div.fullRightList ul li.frHidearrowleft {width: 10px; height: 195px; background:url(../images/icon/icons_index.gif) no-repeat -430px -65px;
+									 position: relative; cursor: default; margin: 0 2px 0 6px;}
+div.fullRightList ul li.frHidearrowright {width: 10px; height: 195px; background:url(../images/icon/icons_index.gif) no-repeat -430px -65px;
+									  position: relative; cursor: default; margin-left: 11px;}							
+
+div.wrapRow div.rightColumnWrapperNR {width: 980px; position: relative; z-index: 6;}			
+div.hotProductNR {width: 693px; height: 240px; position: relative; float: left; border: 1px solid #ddd;}		
+div.tabHeaderNR {width: 688px; height: 30px; background:url(../images/icon/icons_index.gif) repeat-x -0px -260px; line-height: 30px; font-size: 14px;
+				 font-weight: bold; color: #ff5000; padding-left: 5px; position: relative;}
+	div.hpListNR {padding: 5px 5px 5px 0px; width: 688px; float: left; position: relative; display:inline;}
+	div.hpListNR ul {margin: 0; padding: 0;}
+	div.hpListNR ul li {float: left; display: inline;}
+	div.hpListNR ul li.hparrowleft {width: 10px; height: 195px; background:url(../images/icon/icons_index.gif) no-repeat -410px -65px;
+										  position: relative; cursor: pointer; margin: 0 2px 0 6px;}
+	div.hpListNR ul li.hparrowright {width: 10px; height: 195px; background:url(../images/icon/icons_index.gif) no-repeat -420px -65px;
+										   position: relative; cursor: pointer; margin-left: 11px;}	
+	div.hpListNR ul li.hpProductList {width: 143px; height: 195px; margin: 0 0 0 19px; position: relative;}
+	div.hpListNR ul li.hpProductList div {display:block; width: 112px; height: 112px; margin: 3px auto 0 auto;}
+
+
+.backToOldBtn {width: 193px; height: 37px; display: block; position: fixed; bottom: 0; right: 0; z-index: 20;}
+* html .backToOldBtn {position: absolute;
+right:auto;left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0));
+bottom:auto;top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));}

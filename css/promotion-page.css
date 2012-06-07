@@ -1,0 +1,11 @@
+/* @override 
+	http://shopping.delta/css/promotion-page.css */
+
+/* Promotion Page CSS file */
+.promotion-landing-page {
+	padding-top: 15px;
+}
+.promotion-landing-page ul {
+	text-align: center;
+	list-style-type: none;
+}
